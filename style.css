@@ -46,30 +46,33 @@ button.nav-button {
     border-radius: 10px;
 }
 
-section.hero-section-1 {
+section.hero-section {
     margin-top: 50px;
     padding: 50px 75px;
     display: flex;
     gap: 100px;
 }
 
-div.hero-left {
+div.hero-left,div.hero-right{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
-div.hero-left>h1 {
+div.hero-left>h1,
+div.hero-right>h1 {
     font-family: "Roboto";
     font-size: 65px;
     font-weight: 900;
     white-space: pre-line;
 }
 
-div.hero-left>p {
+div.hero-left>p,
+div.hero-right>p {
     white-space: pre-line;
     display: inline-block;
-    margin-top: 50px;
-    margin-bottom: auto;
+    /* margin-top: 50px; */
+    /* margin-bottom: auto; */
     font-family: 'Roboto';
     font-size: 17px;
     font-weight: 300;
@@ -79,11 +82,9 @@ div.hero-left>p {
     padding-right: 20px;
 }
 
-div.hero-left>button {
-    margin-top: 50px;
-}
-
-button.hero-btn.choose {
+div.hero-left>button,
+div.hero-right>button {
+    /* margin-top: 50px; */
     background: linear-gradient(to right, rgba(8, 180, 246, 1) 50%, rgba(6, 124, 238, 1) 100%);
     width: 200px;
     height: 50px;
@@ -95,3 +96,63 @@ button.hero-btn.choose {
     font-size: 17px;
     border-radius: 10px;
 }
+
+ div.hero-right>img{
+    width: 620px;
+    height: 470px;
+ } 
+
+ section.feature-section{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 75px;
+ }
+
+ div.feature-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ }
+
+ div.feature-header>h3{
+    white-space: pre-line;
+    font-family: 'Roboto';
+    font-size: 50px;
+    font-weight: 900;
+ }
+ div.feature-header>p{
+    white-space:pre-line;
+    font-family: 'Roboto';
+    font-weight: 300;
+    color: #abbdd1;
+ }
+
+ div.feature-grid{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    gap: 20px;
+ }
+
+ div.feature{
+    display: flex;
+    font-family: 'Roboto';
+    flex-direction: column;
+    gap: 10px;
+ }
+
+ div.feature>h3{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 700;
+ }
+ div.feature>img{
+    width: 50px;
+    height: 50px;
+ }
+
+ div.feature>p{
+    white-space: pre-line;
+    color: #838384;
+ }
