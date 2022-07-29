@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&family=Roboto:wght@400;500&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +28,7 @@ ul>li {
     width: 80px;
 }
 
-ul>li:first-child {
+nav>ul>li:first-child {
     color: #0a0300;
     font-weight: 700;
 }
@@ -53,7 +53,8 @@ section.hero-section {
     gap: 100px;
 }
 
-div.hero-left,div.hero-right{
+div.hero-left,
+div.hero-right {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -97,62 +98,146 @@ div.hero-right>button {
     border-radius: 10px;
 }
 
- div.hero-right>img{
+div.hero-right>img {
     width: 620px;
     height: 470px;
- } 
+}
 
- section.feature-section{
+section.feature-section {
     display: flex;
     flex-direction: column;
     padding: 50px 75px;
- }
+}
 
- div.feature-header{
+div.feature-header {
     display: flex;
     align-items: center;
     justify-content: space-around;
- }
+}
 
- div.feature-header>h3{
+div.feature-header>h3 {
     white-space: pre-line;
     font-family: 'Roboto';
     font-size: 50px;
     font-weight: 900;
- }
- div.feature-header>p{
-    white-space:pre-line;
+}
+
+div.feature-header>p {
+    white-space: pre-line;
     font-family: 'Roboto';
     font-weight: 300;
     color: #abbdd1;
- }
+}
 
- div.feature-grid{
+div.feature-grid {
     margin-top: 100px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     gap: 40px;
- }
+}
 
- div.feature{
+div.feature {
     display: flex;
     font-family: 'Roboto';
     flex-direction: column;
     gap: 10px;
- }
+}
 
- div.feature>h3{
+div.feature>h3 {
     margin-top: 20px;
     font-size: 30px;
     font-weight: 700;
- }
- div.feature>img{
+}
+
+div.feature>img {
     width: 50px;
     height: 50px;
- }
+}
 
- div.feature>p{
+div.feature>p {
     white-space: pre-line;
     color: #838384;
- }
+}
+
+section.plans {
+    padding: 50px 75px;
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    background-color: #09b7f7;
+}
+
+div.packages {
+    display: flex;
+    gap: 40px;
+}
+
+div.package {
+    width: 500px;
+    background-color: #ffffff;
+    display: flex;
+    outline: 2px solid black;
+    flex-direction: column;
+    padding: 50px 40px;
+    color: #0a0300;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
+
+div.package h2 {
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-weight: 900;
+}
+
+div.package p {
+    margin-top: 20px;
+    color: #838384;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 100px;
+}
+
+ul.plan-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+ul.plan-list>li {
+    display: flex;
+    gap: 10px;
+    width: 350px;
+    font-size: 18px;
+    font-weight: 500;
+}
+ul.plan-list>li::before{
+    content: '\2713';
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    color: #008000;
+    border: 2px solid #008000;
+    text-align: center;
+}
+section.plans>h2 {
+    align-self: center;
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+div.price{
+   margin-left: 50px;
+}
+
+div.price>p{
+    margin: 0;
+}
