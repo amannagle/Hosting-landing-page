@@ -172,6 +172,7 @@ section.plans {
 div.packages {
     display: flex;
     gap: 40px;
+    padding-bottom: 100px;
 }
 
 div.package {
@@ -180,7 +181,7 @@ div.package {
     display: flex;
     outline: 2px solid black;
     flex-direction: column;
-    padding: 50px 40px;
+    padding: 50px 0px 50px 40px;
     color: #0a0300;
     outline: none;
     border: none;
@@ -235,9 +236,68 @@ section.plans>h2 {
 }
 
 div.price{
-   margin-left: 50px;
+   margin-left: 35px;
 }
 
 div.price>p{
+    margin-left: 35px;
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+
+div.price span{
+    color: #9ba1b1;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+button.price-btn
+{
+    display: block;
+    margin: 0 auto 0 10px;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    background-color: transparent;
+    color: #62a8f3;
+    border: 2px solid #62a8f3;
+    font-size: 16px;
+    font-weight: 900;
+    border-radius: 10px;
+}
+
+div.popular-head{
+    background-color: #353535;
+    color: #ffffff;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 150px;
+}
+
+div.popular-head >p{
+    padding: 0;
     margin: 0;
+    margin-top: 10px;
+}
+div.packages>:nth-child(2)
+{
+    padding-top: 0;
+    padding-left: 0;
+}
+div.popular-head~ul{
+    margin-top: 70px;
+    padding-left: 20px;
+}
+
+div.popular-head~ul~div{
+    padding-left: 35px;
+}
+div.popular-head~ul~div>button{
+    background: linear-gradient(to right, rgba(8, 180, 246, 1) 50%, rgba(6, 124, 238, 1) 100%);
+    color: #ffffff;
 }
