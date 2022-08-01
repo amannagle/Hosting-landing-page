@@ -301,3 +301,135 @@ div.popular-head~ul~div>button{
     background: linear-gradient(to right, rgba(8, 180, 246, 1) 50%, rgba(6, 124, 238, 1) 100%);
     color: #ffffff;
 }
+
+section.review{
+    display: flex;
+    background-color: #fdfeff;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.review>h1
+{
+    margin-top: 200px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 50px;
+}
+section.review>p{
+    /* background-color: #fdfeff; */
+    margin-bottom: 30px;
+    white-space: pre-line;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: #a4aab8;
+}
+div.review-grid
+{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 650px 650px;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+
+div.review-card{
+    display: flex;
+    flex-direction: column;
+     box-shadow: 5px 5px 5px 5px #f1f2f3;
+    border: 2px solid #f1f2f3;
+    padding: 30px;
+    border-radius: 10px;
+    gap: 30px;
+}
+
+div.author{
+    position: relative;
+    margin-left: 80px;
+    font-family: 'Roboto';
+}
+
+div.author::before{
+    content: '';
+    height: 75px;
+    width: 75px;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -17px;
+    left: -89px;
+}
+div.content>p{
+    font-size: 18px;
+    color: #6a728a;
+}
+div.author>h5{
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+section.register-card{
+    color: #ffffff;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #18c7f9, #00bbfb, #00adfd, #00a0fd, #0091fc, #0082f8, #0071f2, #045fe9);
+    margin-bottom: 200px;
+}
+
+div.left-header>h2{
+    font-family: "Roboto";
+    white-space: pre-line;
+    font-size: 50px;
+}
+
+div.left-header>p{
+    white-space: pre-line;
+    font-size: 22px;
+    font-weight: 100;
+    color: #b9defb;
+}
+
+button.register{
+    margin-right: 50px;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    font-size: 18px;
+    border-radius: 10px;
+    font-family: 'Roboto';
+}
+
+footer{
+    display: flex;
+    font-family: 'Roboto';
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+div.left-footer>p{
+    white-space: pre-line;
+}
+div.mid-footer{
+    display: flex;
+    gap: 10px;
+}
+ul.footer-list{
+    display: flex;
+    flex-direction: column;
+}
+
+li.list-header{
+    font-size: 25px;
+
+}
+
+ul.footer-list li{
+    width: 200px;
+}
