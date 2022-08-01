@@ -415,6 +415,8 @@ footer{
 
 div.left-footer>p{
     white-space: pre-line;
+    color: #b0b5c1;
+    line-height: 2;
 }
 div.mid-footer{
     display: flex;
@@ -422,14 +424,47 @@ div.mid-footer{
 }
 ul.footer-list{
     display: flex;
+    gap: 20px;
     flex-direction: column;
+    align-items: center;
 }
 
-li.list-header{
-    font-size: 25px;
 
-}
 
 ul.footer-list li{
     width: 200px;
+    font-family: "Roboto";
+    font-size: 17px;
+    color: #b0b5c1;
+}
+
+ul>li.list-header{
+    font-size: 25px;
+    font-weight: 900;
+    color: #000000;
+}
+
+div.right-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+div.right-footer>h5{
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+ul.social-list{
+    display: flex;
+    /* gap: 10px; */
+}
+
+ul.social-list>li{
+    width: 50px;
+}
+ul.social-list>li>img{
+    width: 30px;
+    height: 50px;
 }
