@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&family=Roboto:wght@400;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 16px;
 }
 
@@ -59,9 +60,10 @@ section.hero-section {
     align-items: center;
 }
 
-div.hero-right{
+div.hero-right {
     flex-basis: 50%;
 }
+
 div.hero-left,
 div.hero-right {
     display: flex;
@@ -107,7 +109,8 @@ div.hero-right>button {
     border-radius: 0.8em;
 }
 
-div.hero-left>img ,div.hero-right>img {
+div.hero-left>img,
+div.hero-right>img {
     width: 100%;
 }
 
@@ -225,7 +228,8 @@ ul.plan-list>li {
     font-size: 1rem;
     font-weight: 500;
 }
-ul.plan-list>li::before{
+
+ul.plan-list>li::before {
     content: '\2713';
     display: inline-flex;
     justify-content: center;
@@ -237,30 +241,30 @@ ul.plan-list>li::before{
     border: 2px solid #008000;
     text-align: center;
 }
+
 section.plans>h2 {
     align-self: center;
     font-size: 2.5rem;
     margin-bottom: 2.5em;
 }
 
-div.price{
-   margin-left: 2em;
+div.price {
+    margin-left: 2em;
 }
 
-div.price>p{
+div.price>p {
     margin-left: 2em;
     margin-bottom: 2em;
     font-size: 1rem;
 }
 
-div.price span{
+div.price span {
     color: #9ba1b1;
     font-size: 2rem;
     letter-spacing: 2px;
 }
 
-button.price-btn
-{
+button.price-btn {
     display: block;
     margin: 0 auto 0 0.8em;
     width: 180px;
@@ -274,7 +278,7 @@ button.price-btn
     border-radius: 0.8em;
 }
 
-div.popular-head{
+div.popular-head {
     background-color: #353535;
     color: #ffffff;
     padding-left: 0;
@@ -287,44 +291,46 @@ div.popular-head{
     height: 150px;
 }
 
-div.popular-head >p{
+div.popular-head>p {
     padding: 0;
     margin: 0;
     margin-top: 0.8em;
 }
-div.packages>:nth-child(2)
-{
+
+div.packages>:nth-child(2) {
     padding-top: 0;
     padding-left: 0;
 }
-div.popular-head~ul{
+
+div.popular-head~ul {
     margin-top: 4.25em;
     padding-left: 1.25em;
 }
 
-div.popular-head~ul~div{
+div.popular-head~ul~div {
     padding-left: 2em;
 }
-div.popular-head~ul~div>button{
+
+div.popular-head~ul~div>button {
     background: linear-gradient(to right, rgba(8, 180, 246, 1) 50%, rgba(6, 124, 238, 1) 100%);
     color: #ffffff;
 }
 
-section.review{
+section.review {
     display: flex;
     background-color: #fdfeff;
     flex-direction: column;
     align-items: center;
 }
 
-section.review>h1
-{
+section.review>h1 {
     margin-top: 4em;
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 3rem;
 }
-section.review>p{
+
+section.review>p {
     /* background-color: #fdfeff; */
     margin-bottom: 1.8em;
     white-space: pre-line;
@@ -333,16 +339,19 @@ section.review>p{
     font-size: 1rem;
     color: #a4aab8;
 }
-div.review-grid
-{
+
+div.review-grid {
     margin-top: 3em;
     display: grid;
-    grid-template-columns: 650px 650px;
+    margin-left: auto;
+    padding: 0 50px;
+    margin-right: auto;
+    grid-template-columns: repeat(auto-fill, minmax(650px, 1fr));
     gap: 1.25em;
     margin-bottom: 8em;
 }
 
-div.review-card{
+div.review-card {
     display: flex;
     flex-direction: column;
     box-shadow: 5px 5px 5px 5px #f1f2f3;
@@ -352,13 +361,13 @@ div.review-card{
     gap: 2em;
 }
 
-div.author{
+div.author {
     position: relative;
     margin-left: 4.25em;
     font-family: 'Roboto';
 }
 
-div.author::before{
+div.author::before {
     content: '';
     height: 75px;
     width: 75px;
@@ -368,16 +377,18 @@ div.author::before{
     bottom: -17px;
     left: -89px;
 }
-div.content>p{
+
+div.content>p {
     font-size: 1rem;
     color: #6a728a;
 }
-div.author>h5{
+
+div.author>h5 {
     margin-bottom: 0.25em;
     font-size: 1rem;
 }
 
-section.register-card{
+section.register-card {
     color: #ffffff;
     padding: 8em;
     display: flex;
@@ -387,20 +398,20 @@ section.register-card{
     margin-bottom: 16em;
 }
 
-div.left-header>h2{
+div.left-header>h2 {
     font-family: "Roboto";
     white-space: pre-line;
     font-size: 3rem;
 }
 
-div.left-header>p{
+div.left-header>p {
     white-space: pre-line;
     font-size: 1.5rem;
     font-weight: 100;
     color: #b9defb;
 }
 
-button.register{
+button.register {
     margin-right: 3em;
     width: 180px;
     height: 50px;
@@ -413,7 +424,7 @@ button.register{
     font-family: 'Roboto';
 }
 
-footer{
+footer {
     display: flex;
     font-family: 'Roboto';
     align-items: flex-start;
@@ -421,16 +432,18 @@ footer{
     margin-bottom: 8em;
 }
 
-div.left-footer>p{
+div.left-footer>p {
     white-space: pre-line;
     color: #b0b5c1;
     line-height: 2;
 }
-div.mid-footer{
+
+div.mid-footer {
     display: flex;
     gap: 0.8em;
 }
-ul.footer-list{
+
+ul.footer-list {
     display: flex;
     gap: 1.25em;
     flex-direction: column;
@@ -439,40 +452,41 @@ ul.footer-list{
 
 
 
-ul.footer-list li{
+ul.footer-list li {
     width: 200px;
     font-family: "Roboto";
     font-size: 1rem;
     color: #b0b5c1;
 }
 
-ul>li.list-header{
+ul>li.list-header {
     font-size: 1.5rem;
     font-weight: 900;
     color: #000000;
 }
 
-div.right-footer{
+div.right-footer {
     display: flex;
     flex-direction: column;
 }
 
-div.right-footer>h5{
+div.right-footer>h5 {
     font-family: 'Roboto';
     font-size: 2rem;
     font-weight: 900;
     margin-bottom: 10px;
 }
 
-ul.social-list{
+ul.social-list {
     display: flex;
     /* gap: 10px; */
 }
 
-ul.social-list>li{
+ul.social-list>li {
     width: 50px;
 }
-ul.social-list>li>img{
+
+ul.social-list>li>img {
     width: 30px;
     height: 50px;
 }
@@ -483,7 +497,7 @@ ul.social-list>li>img{
     justify-content: space-between;
     position: absolute;
     top: 3.7em;
-    right: 4em;
+    right: 1em;
     height: 20px;
     width: 30px;
     cursor: pointer;
@@ -496,22 +510,26 @@ span.bar {
     transition: background-color 300ms ease-in-out;
 }
 
-@media(max-width:500px)
-{
-    html{
+@media(max-width:500px) {
+    html {
         font-size: 6px;
     }
-    nav{
+
+    nav {
         padding: 1em 3em;
     }
-    nav ul{
+
+    nav ul {
         display: none;
     }
 
-    div.hamburger{
+    div.hamburger {
         display: flex;
     }
 
+    section{
+        width: 100%;
+    }
     div.hero-left>h1,
     div.hero-right>h1 {
         font-family: "Roboto";
@@ -519,7 +537,7 @@ span.bar {
         font-weight: 900;
         white-space: pre-line;
     }
-    
+
     div.hero-left>p,
     div.hero-right>p {
         width: 80%;
@@ -534,7 +552,7 @@ span.bar {
         color: #95a0ae;
         text-align: left;
     }
-    
+
     div.hero-left>button,
     div.hero-right>button {
         margin-top: 3em;
@@ -549,11 +567,128 @@ span.bar {
         font-size: 1rem;
         border-radius: 0.8em;
     }
-    
-  
+
+
     section.feature-section {
         display: flex;
         flex-direction: column;
         padding: 50px 75px;
+    }
+
+    div.feature-header {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    div.packages {
+        flex-direction: column;
+    }
+
+    section.plans {
+        align-items: center;
+    }
+
+    div.package {
+        padding: 2em;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    ul.plan-list>li {
+        font-size: 2rem;
+    }
+
+
+    div.price {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 6em;
+    }
+
+    div.price>h2 {
+        padding: 0;
+        display: block;
+        margin-left: 2em;
+    }
+
+    button.price-btn {
+        display: block;
+        width: 120px;
+        font-size: 2rem;
+    }
+
+    div.popular-head {
+        background-color: #353535;
+        color: #ffffff;
+        padding-left: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 1.25em;
+        align-items: center;
+        border-radius: 3em;
+        width: 100%;
+    }
+
+    div.package:nth-child(2) {
+        padding-right: 0;
+    }
+
+    div.popular-head>h2 {
+        margin-top: 2em;
+    }
+
+    div.review-grid {
+
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+    }
+
+    div.author::before{
+        content: '';
+        height: 20px;
+        width: 20px;
+        background-color: #d9d9d9;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -3px;
+        left: -26px;
+    }
+
+    body{
+    width: 100vw;
+    height: 100vh;
+    max-width:100%;
+    }
+    section.register-card{
+        flex-direction: column;
+        gap: 2em;
+        font-size: 2rem;
+    }
+
+    
+    section.register-card button{
+        width: 100px;
+        font-size: 1.5rem;
+        }
+
+    footer{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 10em;
+        height: 500px;
+        gap:4em;
+    }
+
+    div.mid-footer{
+        flex-direction: column;
     }
 }
